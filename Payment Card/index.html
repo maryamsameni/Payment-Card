@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaymentCard</title>
+    <link rel="stylesheet" href="master.css">
+</head>
+
+<body>
+    <div class="box">
+        <div class="right">
+
+            <div class="topText">
+                <div class="webText">
+                    <span>.web</span><span>Pay</span>
+                </div>
+                <div class="time">
+                    <span id="time"></span><br>
+                    <span>time Left !</span>
+                </div>
+            </div>
+
+            <div class="secc2">
+                <h5>Card Number</h5>
+                <p>Enter the 16-digit card number on the card</p>
+                <input type="text" placeholder="XXXX" onkeyup="_checkType(this,1)" maxlength="4">
+                <input type="text" placeholder="XXXX" onkeyup="_checkType(this,2)" maxlength="4">
+                <input type="text" placeholder="XXXX" onkeyup="_checkType(this,3)" maxlength="4">
+                <input type="text" placeholder="XXXX" onkeyup="_checkType(this,4)" maxlength="4">
+            </div>
+
+            <div class="secc3">
+                <div class="secc3Left">
+                    <ul>
+                        <h5>Card Name Holder</h5>
+                        <p>Enter name card holder on the card</p>
+                    </ul>
+                    <ul>
+                        <h5>CVV Number</h5>
+                        <p>Enter the 3 or 4 digits number on the card</p>
+                    </ul>
+                    <ul>
+                        <h5>Expiry Date</h5>
+                        <p>Enter the expiration date on the card</p>
+                    </ul>
+                </div>
+
+                <div class="secc3Right">
+                    <ul>
+                        <input type="text" class="nameInput" onkeyup="_checkType(this,5)"
+                            placeholder="must be 12 characters">
+                    </ul>
+                    <ul>
+                        <input type="text" class="cvvInput" onkeyup="_checkType(this,6)" maxlength="3">
+                    </ul>
+                    <ul>
+                        <input type="text" placeholder="MM" class="monthInput" onkeyup="_checkType(this,7)"
+                            maxlength="2">
+                        <span>/</span>
+                        <input type="text" placeholder="YY" class="yearInput" onkeyup="_checkType(this,8)"
+                            maxlength="2">
+                    </ul>
+                </div>
+
+                <button>pay now</button>
+            </div>
+        </div>
+
+        <div class="left">
+            <div class="card">
+                <div class="topCard">
+                    <div class="topCardSecc1">
+                        <p class="nameCard"></p>
+                    </div>
+                    <div class="topCardSecc2">
+                        <p class="numberCard"></p>
+                        <p class="cvv"></p>
+                        <span class="month"></span>
+
+                        <span class="year"></span>
+                    </div>
+                </div>
+
+                <div class="bottomCard">
+                    <ul>
+                        <li>Order Number</li>
+                        <li>150420022</li>
+                    </ul>
+                    <div class="line"></div>
+                    <ul>
+                        <li>Product</li>
+                        <li>iphone 13 Pro </li>
+                    </ul>
+                    <div class="line"></div>
+                    <ul>
+                        <li>var (10%) </li>
+                        <li>$50.00</li>
+                    </ul>
+                    <div class="line"></div>
+                    <h5>1.255 USD </h5>
+                    <p>Total you have to pay</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
